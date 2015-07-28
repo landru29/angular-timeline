@@ -49,12 +49,12 @@ module.exports = function(grunt) {
       }
     },
 
-    sass: {
+    less: {
       dist: {
         files: {
-          'dist/angular-timeline.css':'src/angular-timeline.scss',
-          'dist/angular-timeline-bootstrap.css':'src/angular-timeline-bootstrap.scss',
-          'dist/angular-timeline-animations.css':'src/angular-timeline-animations.scss'
+          'dist/angular-timeline.css':'src/angular-timeline.less',
+          'dist/angular-timeline-bootstrap.css':'src/angular-timeline-bootstrap.less',
+          'dist/angular-timeline-animations.css':'src/angular-timeline-animations.less'
         }
       }
     },
@@ -125,7 +125,7 @@ module.exports = function(grunt) {
   grunt.registerTask('serve', ['build','connect', 'watch']);
 	grunt.registerTask('beautify', ['jsbeautifier:update']);
   grunt.registerTask('build', [
-    'clean', 'sass', 'jsbeautifier:verify', 'jshint', 'concat', 'ngdocs' //'karma'
+    'clean', 'less', 'jsbeautifier:verify', 'jshint', 'concat', 'ngdocs' //'karma'
   ]);
 
   grunt.registerTask('default', [
