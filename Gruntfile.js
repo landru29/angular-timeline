@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         // Replace all 'use strict' statements in the code with a single one at the top
         options: {
 
-          banner: "angular.module('" + moduleName + "', ['angular-scroll-animate', 'ngSanitize']);\n",
+          banner: "angular.module('" + moduleName + "', ['ngSanitize']);\n",
           process: function(src, filepath) {
             return '// Source: ' + filepath + '\n' +
             src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, '$1');

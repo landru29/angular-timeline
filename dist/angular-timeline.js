@@ -1,4 +1,4 @@
-angular.module('angular-timeline', ['angular-scroll-animate', 'ngSanitize']);
+angular.module('angular-timeline', ['ngSanitize']);
 // Source: src/timeline-badge-directive.js
 /*global angular*/
 
