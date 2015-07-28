@@ -1,4 +1,4 @@
-'use strict';
+/*global angular*/
 
 /**
  * @ngdoc directive
@@ -9,6 +9,7 @@
  * Shown in the centre pane (or left on narrow devices) to indicate the activity.
  */
 angular.module('angular-timeline').directive('timelineBadge', function() {
+  'use strict';
   return {
     require: '^timelineEvent',
     restrict: 'AE',

@@ -1,5 +1,7 @@
-'use strict';
-angular.module('angular-timeline', []);// Source: src/timeline-badge-directive.js
+angular.module('angular-timeline', ['angular-scroll-animate', 'ngSanitize']);
+// Source: src/timeline-badge-directive.js
+/*global angular*/
+
 /**
  * @ngdoc directive
  * @name angular-timeline.directive:timeline-badge
@@ -9,7 +11,7 @@ angular.module('angular-timeline', []);// Source: src/timeline-badge-directive.j
  * Shown in the centre pane (or left on narrow devices) to indicate the activity.
  */
 angular.module('angular-timeline').directive('timelineBadge', function() {
-  return {
+return {
     require: '^timelineEvent',
     restrict: 'AE',
     transclude: true,
@@ -18,6 +20,7 @@ angular.module('angular-timeline').directive('timelineBadge', function() {
 });
 
 // Source: src/timeline-directive.js
+/*global angular*/
 /**
  * @ngdoc directive
  * @name angular-timeline.directive:timeline
@@ -27,7 +30,7 @@ angular.module('angular-timeline').directive('timelineBadge', function() {
  * Primary container for displaying a vertical set of timeline events.
  */
 angular.module('angular-timeline').directive('timeline', function() {
-  return {
+return {
     restrict: 'AE',
     transclude: true,
     template: '<ul class="timeline" ng-transclude></ul>',
@@ -36,6 +39,8 @@ angular.module('angular-timeline').directive('timeline', function() {
 });
 
 // Source: src/timeline-event-directive.js
+/*global angular*/
+
 /**
  * @ngdoc directive
  * @name angular-timeline.directive:timeline-event
@@ -51,7 +56,7 @@ angular.module('angular-timeline').directive('timeline', function() {
  * You typically embed a `timeline-badge` and `timeline-panel` element within a `timeline-event`.
  */
 angular.module('angular-timeline').directive('timelineEvent', function() {
-  return {
+return {
     require: '^timeline',
     restrict: 'AE',
     transclude: true,
@@ -108,6 +113,8 @@ angular.module('angular-timeline').directive('timelineEvent', function() {
 });
 
 // Source: src/timeline-footer-directive.js
+/*global angular*/
+
 /**
  * @ngdoc directive
  * @name angular-timeline.directive:timeline-footer
@@ -117,7 +124,7 @@ angular.module('angular-timeline').directive('timelineEvent', function() {
  * Optional element to add a footer section to the `timeline-panel` for links or other actions.
  */
 angular.module('angular-timeline').directive('timelineFooter', function() {
-  return {
+return {
     require: '^timelinePanel',
     restrict: 'AE',
     transclude: true,
@@ -126,6 +133,8 @@ angular.module('angular-timeline').directive('timelineFooter', function() {
 });
 
 // Source: src/timeline-heading-directive.js
+/*global angular*/
+
 /**
  * @ngdoc directive
  * @name angular-timeline.directive:timeline-heading
@@ -135,7 +144,7 @@ angular.module('angular-timeline').directive('timelineFooter', function() {
  * Optional element to show the heading for a `timeline-panel`.
  */
 angular.module('angular-timeline').directive('timelineHeading', function() {
-  return {
+return {
     require: '^timelinePanel',
     restrict: 'AE',
     transclude: true,
@@ -144,6 +153,8 @@ angular.module('angular-timeline').directive('timelineHeading', function() {
 });
 
 // Source: src/timeline-panel-directive.js
+/*global angular*/
+
 /**
  * @ngdoc directive
  * @name angular-timeline.directive:timeline-panel
@@ -153,7 +164,7 @@ angular.module('angular-timeline').directive('timelineHeading', function() {
  * An panel inside the `timeline-event` which shows detailed information about the event.
  */
 angular.module('angular-timeline').directive('timelinePanel', function() {
-  return {
+return {
     require: '^timeline',
     restrict: 'AE',
     transclude: true,

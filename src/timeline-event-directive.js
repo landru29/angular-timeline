@@ -1,4 +1,4 @@
-'use strict';
+/*global angular*/
 
 /**
  * @ngdoc directive
@@ -15,6 +15,7 @@
  * You typically embed a `timeline-badge` and `timeline-panel` element within a `timeline-event`.
  */
 angular.module('angular-timeline').directive('timelineEvent', function() {
+  'use strict';
   return {
     require: '^timeline',
     restrict: 'AE',

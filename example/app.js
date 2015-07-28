@@ -1,10 +1,8 @@
 'use strict';
 
 var app = angular.module('example', [
-	'ngSanitize',
   'ui.router',
-  'angular-timeline',
-	'angular-scroll-animate'
+  'angular-timeline'
 ]);
 
 app.config(function($stateProvider) {

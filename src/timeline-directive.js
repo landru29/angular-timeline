@@ -1,5 +1,4 @@
-'use strict';
-
+/*global angular*/
 /**
  * @ngdoc directive
  * @name angular-timeline.directive:timeline
@@ -9,6 +8,7 @@
  * Primary container for displaying a vertical set of timeline events.
  */
 angular.module('angular-timeline').directive('timeline', function() {
+  'use strict';
   return {
     restrict: 'AE',
     transclude: true,

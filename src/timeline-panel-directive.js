@@ -1,4 +1,4 @@
-'use strict';
+/*global angular*/
 
 /**
  * @ngdoc directive
@@ -9,6 +9,7 @@
  * An panel inside the `timeline-event` which shows detailed information about the event.
  */
 angular.module('angular-timeline').directive('timelinePanel', function() {
+  'use strict';
   return {
     require: '^timeline',
     restrict: 'AE',
