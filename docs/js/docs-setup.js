@@ -5,21 +5,12 @@ NG_DOCS={
   "pages": [
     {
       "section": "api",
-      "id": "angular-timeline",
-      "shortName": "angular-timeline",
-      "type": "directive",
-      "moduleName": "angular-timeline",
-      "shortDescription": "Primary container for displaying a vertical set of timeline events.",
-      "keywords": "ae angular-timeline api container directive displaying events primary set timeline vertical"
-    },
-    {
-      "section": "api",
       "id": "angular-timeline.directive:timeline",
       "shortName": "timeline",
       "type": "directive",
       "moduleName": "angular-timeline",
-      "shortDescription": "Represents an event occuring at a point in time, displayed on the left or the right",
-      "keywords": "ae angular-timeline api directive displayed element embed event left occuring point represents time timeline timeline-badge timeline-event timeline-panel typically"
+      "shortDescription": "Primary container for displaying a vertical set of timeline events.",
+      "keywords": "ae angular-timeline api container directive displaying events primary set timeline vertical"
     },
     {
       "section": "api",
@@ -29,6 +20,15 @@ NG_DOCS={
       "moduleName": "angular-timeline",
       "shortDescription": "Shown in the centre pane (or left on narrow devices) to indicate the activity.",
       "keywords": "activity ae angular-timeline api centre devices directive indicate left narrow pane"
+    },
+    {
+      "section": "api",
+      "id": "angular-timeline.directive:timeline-event",
+      "shortName": "timeline-event",
+      "type": "directive",
+      "moduleName": "angular-timeline",
+      "shortDescription": "Represents an event occuring at a point in time, displayed on the left or the right",
+      "keywords": "ae alternate angular-timeline api define directive displayed distribute distribution element elements embed event left occuring point represents side time timeline timeline-badge timeline-event timeline-panel typically"
     },
     {
       "section": "api",

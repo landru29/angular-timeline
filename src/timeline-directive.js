@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc directive
- * @name angular-timeline
+ * @name angular-timeline.directive:timeline
  * @restrict AE
  *
  * @description
@@ -12,6 +12,7 @@ angular.module('angular-timeline').directive('timeline', function() {
   return {
     restrict: 'AE',
     transclude: true,
-    template: '<ul class="timeline" ng-transclude></ul>'
+    template: '<ul class="timeline" ng-transclude></ul>',
+    controller: function() {}
   };
 });
